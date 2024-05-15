@@ -1,0 +1,2089 @@
+{
+  "displayName": "Advanced NavigationV1 Pack2.0.0",
+  "defaultWidth": 1924,
+  "defaultHeight": 40,
+  "components": "./index.js",
+  "icon": "./thumbnail.png",
+  "resizeY": true,
+  "author": "Konstantinos Pap",
+  "version": "3.0.1",
+  "demoAppURL": "https://previewer.adalo.com/f61692cf-fa81-42d6-aa73-fbf17e5824f5?sessionToken=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM2NjgxMywiZW1haWwiOiJjeWJlcmdvZ29hcHBzQGdtYWlsLmNvbSIsImRldmVsb3BlciI6dHJ1ZSwiaWF0IjoxNzExMzgyOTMyLCJleHAiOjE3MTM5NzQ5MzJ9.Ax9kt1aCfhNYTWyAiCz-NYDCPMBeDqIzK3dfcnvgzcdb34OCvBokaHGoh03ZVCXiqe3I-5umHDzZkUWCS5xU4XDt42DnVGJWF5WFui7fjBNPGFJTIgJCmUZrNx3kc90bf6Oj6ZXM7xj7sLNkPgUhGpPmACjUf2HRJ80EXrBUm9vCKAsuJpyV1rMZK-moytxz1Q9AG5fp6iYvmgWc8onLZQaJ0L0kdyFrSJbkHQO0ixpfUn9yJtw3r0DwiOhAy_kZmFcx3clcIhfIJlJMRUThx4eLgu3FEjyHiFKYlTftlj17vsMe8eKO74RiV51SScQqc1_eLqfOP7gJaRlvmQuQBg&_gl=1*cluw16*_ga*MTc2MDE5NjA3LjE3MDk1NDY1Mjc.*_ga_SWT45DV35L*MTcxMTM4MjUxMi40OS4xLjE3MTEzODM3OTguNjAuMC4w",
+  "supportURL": "https://cybergogo.co.uk",
+  "snappingRules": {
+    "snap": true,
+    "snapType": "screenEdge",
+    "lock": {
+      "left": 0,
+      "right": 0,
+      "top": 20
+    }
+  },
+  "props": [
+    {
+      "name": "subMenuIconEnable",
+      "displayName": "Sub Menu Icon on/off",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "iconName",
+      "displayName": "Sub Menu Icon",
+      "type": "icon",
+      "default": "keyboard-arrow-down",
+      "enabled": {
+        "subMenuIconEnable": true
+      }
+    },
+    {
+      "name": "iconColor",
+      "displayName": "Sub Menu Icon Color",
+      "type": "color",
+      "default": "#666666",
+      "enabled": {
+        "subMenuIconEnable": true
+      }
+    },
+    {
+      "name": "iconSize",
+      "displayName": "Sub Menu Icon Size",
+      "type": "number",
+      "default": 24,
+      "control": { "type": "slider", "max": 70, "min": 1 },
+      "enabled": {
+        "subMenuIconEnable": true
+      }
+    }
+  ],
+  "childComponents": [
+    {
+      "name": "menuItem0",
+      "displayName": "Menu Item 0",
+      "props": [
+        { "name": "label",
+          "type": "text",
+          "displayName": "Label",
+          "default": "Labour"
+           
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        },
+        {
+          "name": "url",
+          "displayName": "URL",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "iconEnable",
+          "displayName": "Icon on/off",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "iconName",
+          "displayName": "Icon",
+          "type": "icon",
+          "default": "settings",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#666666",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconSize",
+          "displayName": "Size",
+          "type": "number",
+          "default": 24,
+          "control": { "type": "slider", "max": 70, "min": 1 },
+          "enabled": {
+            "iconEnable": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "subItem_0_1",
+      "displayName": "SubItem 0.1",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_0_2",
+      "displayName": "SubItem 0.2",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_0_2",
+      "displayName": "SubItem 0.2",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_0_3",
+      "displayName": "SubItem 0.3",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_0_4",
+      "displayName": "SubItem 0.4",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_0_5",
+      "displayName": "SubItem 0.5",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_0_6",
+      "displayName": "SubItem 0.6",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_0_7",
+      "displayName": "SubItem 0.7",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_0_8",
+      "displayName": "SubItem 0.8",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_0_9",
+      "displayName": "SubItem 0.9",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_0_10",
+      "displayName": "SubItem 0.10",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+
+
+
+    {
+      "name": "menuItem1",
+      "displayName": "Menu Item 1",
+      "props": [
+        { 
+          "name": "label", 
+          "type": "text", 
+          "displayName": "Label",
+          "default":"Health & Safety"
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        },
+        {
+          "name": "url",
+          "displayName": "URL",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "iconEnable",
+          "displayName": "Icon on/off",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "iconName",
+          "displayName": "Icon",
+          "type": "icon",
+          "default": "settings",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#666666",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconSize",
+          "displayName": "Size",
+          "type": "number",
+          "default": 24,
+          "control": { "type": "slider", "max": 70, "min": 1 },
+          "enabled": {
+            "iconEnable": true
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "subItem_1_1",
+      "displayName": "SubItem 1.1",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_1_2",
+      "displayName": "SubItem 1.2",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_1_2",
+      "displayName": "SubItem 1.2",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_1_3",
+      "displayName": "SubItem 1.3",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_1_4",
+      "displayName": "SubItem 1.4",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_1_5",
+      "displayName": "SubItem 1.5",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_1_6",
+      "displayName": "SubItem 1.6",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_1_7",
+      "displayName": "SubItem 1.7",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_1_8",
+      "displayName": "SubItem 1.8",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_1_9",
+      "displayName": "SubItem 1.9",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_1_10",
+      "displayName": "SubItem 1.10",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "menuItem2",
+      "displayName": "Menu Item 2",
+      "props": [
+        { "name": "label", "type": "text", "displayName": "Label", "default":"Project Admin" },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        },
+        {
+          "name": "url",
+          "displayName": "URL",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "iconEnable",
+          "displayName": "Icon on/off",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "iconName",
+          "displayName": "Icon",
+          "type": "icon",
+          "default": "settings",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#666666",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconSize",
+          "displayName": "Size",
+          "type": "number",
+          "default": 24,
+          "control": { "type": "slider", "max": 70, "min": 1 },
+          "enabled": {
+            "iconEnable": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "subItem_2_1",
+      "displayName": "SubItem 2.1",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_2_2",
+      "displayName": "SubItem 2.2",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_2_3",
+      "displayName": "SubItem 2.3",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_2_4",
+      "displayName": "SubItem 2.4",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_2_5",
+      "displayName": "SubItem 2.5",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_2_6",
+      "displayName": "SubItem 2.6",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_2_7",
+      "displayName": "SubItem 2.7",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_2_8",
+      "displayName": "SubItem 2.8",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_2_9",
+      "displayName": "SubItem 2.9",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_2_10",
+      "displayName": "SubItem 2.10",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "menuItem3",
+      "displayName": "Menu Item 3",
+      "props": [
+        { "name": "label", "type": "text", "displayName": "Label", "default": "settings" },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        },
+        {
+          "name": "url",
+          "displayName": "URL",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "iconEnable",
+          "displayName": "Icon on/off",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "name": "iconName",
+          "displayName": "Icon",
+          "type": "icon",
+          "default": "settings",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#666666",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconSize",
+          "displayName": "Size",
+          "type": "number",
+          "default": 24,
+          "control": { "type": "slider", "max": 70, "min": 1 },
+          "enabled": {
+            "iconEnable": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "subItem_3_1",
+      "displayName": "SubItem 3.1",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_3_2",
+      "displayName": "SubItem 3.2",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_3_3",
+      "displayName": "SubItem 3.3",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_3_4",
+      "displayName": "SubItem 3.4",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_3_5",
+      "displayName": "SubItem 3.5",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_3_6",
+      "displayName": "SubItem 3.6",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_3_7",
+      "displayName": "SubItem 3.7",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_3_8",
+      "displayName": "SubItem 3.8",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_3_9",
+      "displayName": "SubItem 3.9",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_3_10",
+      "displayName": "SubItem 3.10",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "menuItem4",
+      "displayName": "Menu Item 4",
+      "props": [
+        { "name": "label", "type": "text", "displayName": "Label" },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        },
+        {
+          "name": "url",
+          "displayName": "URL",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "iconEnable",
+          "displayName": "Icon on/off",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "iconName",
+          "displayName": "Icon",
+          "type": "icon",
+          "default": "settings",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#666666",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconSize",
+          "displayName": "Size",
+          "type": "number",
+          "default": 24,
+          "control": { "type": "slider", "max": 70, "min": 1 },
+          "enabled": {
+            "iconEnable": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "subItem_4_1",
+      "displayName": "SubItem 4.1",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_4_2",
+      "displayName": "SubItem 4.2",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_4_3",
+      "displayName": "SubItem 4.3",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_4_4",
+      "displayName": "SubItem 4.4",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_4_5",
+      "displayName": "SubItem 4.5",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_4_6",
+      "displayName": "SubItem 4.6",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_4_7",
+      "displayName": "SubItem 4.7",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_4_8",
+      "displayName": "SubItem 4.8",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_4_9",
+      "displayName": "SubItem 4.9",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_4_10",
+      "displayName": "SubItem 4.10",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "menuItem5",
+      "displayName": "Menu Item 5",
+      "props": [
+        { "name": "label", "type": "text", "displayName": "Label" },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        },
+        {
+          "name": "url",
+          "displayName": "URL",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "iconEnable",
+          "displayName": "Icon on/off",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "iconName",
+          "displayName": "Icon",
+          "type": "icon",
+          "default": "settings",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#666666",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconSize",
+          "displayName": "Size",
+          "type": "number",
+          "default": 24,
+          "control": { "type": "slider", "max": 70, "min": 1 },
+          "enabled": {
+            "iconEnable": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "subItem_5_1",
+      "displayName": "SubItem 5.1",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+
+    {
+      "name": "subItem_5_2",
+      "displayName": "SubItem 5.2",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_5_3",
+      "displayName": "SubItem 5.3",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_5_4",
+      "displayName": "SubItem 5.4",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_5_5",
+      "displayName": "SubItem 5.5",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_5_7",
+      "displayName": "SubItem 5.7",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_5_8",
+      "displayName": "SubItem 5.8",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_5_9",
+      "displayName": "SubItem 5.9",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_5_10",
+      "displayName": "SubItem 5.10",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "menuItem6",
+      "displayName": "Menu Item 6",
+      "props": [
+        { "name": "label", "type": "text", "displayName": "Label" },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        },
+        {
+          "name": "url",
+          "displayName": "URL",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "iconEnable",
+          "displayName": "Icon on/off",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "iconName",
+          "displayName": "Icon",
+          "type": "icon",
+          "default": "settings",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#666666",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconSize",
+          "displayName": "Size",
+          "type": "number",
+          "default": 24,
+          "control": { "type": "slider", "max": 70, "min": 1 },
+          "enabled": {
+            "iconEnable": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "subItem_6_1",
+      "displayName": "SubItem 6.1",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_6_2",
+      "displayName": "SubItem 6.2",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_6_3",
+      "displayName": "SubItem 6.3",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_6_4",
+      "displayName": "SubItem 6.4",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_6_5",
+      "displayName": "SubItem 6.5",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_6_6",
+      "displayName": "SubItem 6.6",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_6_7",
+      "displayName": "SubItem 6.7",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_6_8",
+      "displayName": "SubItem 6.8",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_6_9",
+      "displayName": "SubItem 6.9",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_6_10",
+      "displayName": "SubItem 6.10",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "menuItem7",
+      "displayName": "Menu Item 7",
+      "props": [
+        { "name": "label", "type": "text", "displayName": "Label" },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        },
+        {
+          "name": "url",
+          "displayName": "URL",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "iconEnable",
+          "displayName": "Icon on/off",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "iconName",
+          "displayName": "Icon",
+          "type": "icon",
+          "default": "settings",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#666666",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconSize",
+          "displayName": "Size",
+          "type": "number",
+          "default": 24,
+          "control": { "type": "slider", "max": 70, "min": 1 },
+          "enabled": {
+            "iconEnable": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "subItem_7_1",
+      "displayName": "SubItem 7.1",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_7_2",
+      "displayName": "SubItem 7.2",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_7_3",
+      "displayName": "SubItem 7.3",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_7_4",
+      "displayName": "SubItem 7.4",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_7_5",
+      "displayName": "SubItem 7.5",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_7_6",
+      "displayName": "SubItem 7.6",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_7_7",
+      "displayName": "SubItem 7.7",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_7_8",
+      "displayName": "SubItem 7.8",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_7_9",
+      "displayName": "SubItem 7.9",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_7_10",
+      "displayName": "SubItem 7.10",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "menuItem8",
+      "displayName": "Menu Item 8",
+      "props": [
+        { "name": "label", "type": "text", "displayName": "Label" },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        },
+        {
+          "name": "url",
+          "displayName": "URL",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "iconEnable",
+          "displayName": "Icon on/off",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "iconName",
+          "displayName": "Icon",
+          "type": "icon",
+          "default": "settings",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#666666",
+          "enabled": {
+            "iconEnable": true
+          }
+        },
+        {
+          "name": "iconSize",
+          "displayName": "Size",
+          "type": "number",
+          "default": 24,
+          "control": { "type": "slider", "max": 70, "min": 1 },
+          "enabled": {
+            "iconEnable": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "subItem_8_1",
+      "displayName": "SubItem 8.1",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_8_2",
+      "displayName": "SubItem 8.2",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_8_3",
+      "displayName": "SubItem 8.3",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_8_4",
+      "displayName": "SubItem 8.4",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_8_5",
+      "displayName": "SubItem 8.5",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_8_6",
+      "displayName": "SubItem 8.6",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_8_7",
+      "displayName": "SubItem 8.7",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_8_8",
+      "displayName": "SubItem 8.8",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_8_9",
+      "displayName": "SubItem 8.9",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "name": "subItem_8_10",
+      "displayName": "SubItem 8.10",
+      "props": [
+        {
+          "name": "text",
+          "displayName": "Label",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "action",
+          "displayName": "Click Action",
+          "type": "action"
+        }
+      ]
+    }
+  ]
+}

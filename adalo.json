@@ -1,0 +1,13 @@
+{
+  "author": "Konstantinos P",
+  "description": "Navigation with Drop down",
+  "displayName": "Advanced NavigationV1 Pack2.0.0",
+  "components": [
+    {
+      "name": "DropMenu",
+      "manifest": "./src/DropMenu/manifest.json"
+    }
+  ],
+  "logo": "./logo.png",
+  "webpackConfig": "./webpack.config.js"
+}
